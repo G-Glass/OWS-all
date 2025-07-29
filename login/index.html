@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>OWS all</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+    <header>
+        <h1>OWS</h1>
+        <menu id="itens">
+            <span id="icon" class="material-icons" onclick="clickMenu()">menu</span>
+            <ul>
+                <li>Serviços</li>
+                <li>Empresa</li>
+                <li>Sistemas</li>
+                <li>Conta</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <section id="login">
+            <div id="imagem">
+            
+            </div>
+            <div id="formulario">
+                <h2>Login</h2>
+                <p>Conecte-se com sua conta existente</p>
+                <form action="" method="post">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="mail" id="email" required size="17" maxlength="25" autocomplete="email" placeholder="seu email">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">key</span>
+                        <input type="password" name="senh" id="senha" required size="15" minlength="15" autocomplete="current-password" placeholder="sua senha">
+                        <label for="senha">Senha:</label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Entrar" class="botao">
+                        <a href="" class="botao1">Esqueci a senha</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == "block") {
+                itens.style.display = "none"
+            } else {itens.style.display = "block"}
+
+    
+        }
+    </script>
+</body>
+</html>
